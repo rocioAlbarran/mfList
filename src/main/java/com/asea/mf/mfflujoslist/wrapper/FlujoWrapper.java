@@ -1,9 +1,8 @@
-package com.ope.mf.wrapper;
+package com.asea.mf.mfflujoslist.wrapper;
 
 import java.util.Date;
 
-import com.ope.mf.vo.Flujo;
-
+import com.asea.mf.mfflujoslist.vo.Flujo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

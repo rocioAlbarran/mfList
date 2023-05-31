@@ -1,13 +1,16 @@
-package com.ope.mf.servicio;
+package com.asea.mf.mfflujoslist.servicio;
 
 import java.util.List;
 import java.util.ArrayList;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.ope.mf.repositorio.FlujoRepositorio;
-import com.ope.mf.vo.Flujo;
-import com.ope.mf.wrapper.FlujoWrapper;
+import com.asea.mf.mfflujoslist.repositorio.FlujoRepositorio;
+import com.asea.mf.mfflujoslist.vo.Flujo;
+import com.asea.mf.mfflujoslist.wrapper.FlujoWrapper;
+
+
+
 
 
 @Service

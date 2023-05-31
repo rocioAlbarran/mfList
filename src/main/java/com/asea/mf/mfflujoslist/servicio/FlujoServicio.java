@@ -1,8 +1,10 @@
-package com.ope.mf.servicio;
+package com.asea.mf.mfflujoslist.servicio;
 import java.util.List;
 
-import com.ope.mf.vo.Flujo;
-import com.ope.mf.wrapper.FlujoWrapper;
+import com.asea.mf.mfflujoslist.vo.Flujo;
+import com.asea.mf.mfflujoslist.wrapper.FlujoWrapper;
+
+
 
 public interface FlujoServicio {
 	public List<Flujo> listarFlujos();
