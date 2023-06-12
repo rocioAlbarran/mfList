@@ -25,12 +25,13 @@ import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 */
-@WebFilter("/*")
-@Component
+//@WebFilter("/*")
+//@Component
 public class UserCheckFilter implements Filter {
 	
   
     public static void forward(HttpServletRequest request, HttpServletResponse response, String page) throws ServletException, IOException {
+    	System.out.println("forward 34--->>>>>> ");
         request.getRequestDispatcher("/WEB-INF/user.check" + page)
             .forward(request, response);
     }
@@ -74,7 +75,8 @@ public class UserCheckFilter implements Filter {
         request.setAttribute("origin", request.getRequestURI());
 
         if (!request.getRequestURI()
-            .contains("mf") && request.getSession(false) == null) {
+            .contains("v3") && request.getSession(false) == null) {
+        	System.out.println("doFilter 79--->>>>>> ");
             response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
             forward(request, response, "/login.jsp");
             // we return here so the original servlet is not processed
